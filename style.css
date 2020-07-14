@@ -534,6 +534,11 @@ BookMark Animation ----- End
   display: none;
 }
 
+.desktop {
+    display: flex;
+    width: -webkit-fill-available;
+}
+
 @media (max-width: 800px) {
   .search-bar {
     width: 20vw;
@@ -597,7 +602,8 @@ BookMark Animation ----- End
 }
 
 .desktop {
-  display: block;
+    display: flex;
+    width: -webkit-fill-available;
 }
 
 .mobile {
