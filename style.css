@@ -71,14 +71,14 @@ body {
   border-radius: 25vw;
   margin-left: 10px;
   margin-right: 10px;
+  height: 34px;
+  width: 34px;
 }
 
 .theme {
   width: 20px;
   height: auto;
-  margin-left: 2px;
-  margin-right: 2px;
-  margin-top: 2px;
+  margin-top: 6px;
 }
 
 .head-row {
@@ -92,12 +92,13 @@ body {
 
 .heading h1 {
   margin: 0;
-  font-size: xxx-large;
+  font-size: 6vw;
 }
 
 .bkmrk {
   position: absolute;
   right: 0;
+  margin-right: 45px;
 }
 
 /*
@@ -309,14 +310,14 @@ BookMark Animation ----- End
 */
 
 .subtext {
-  font-size: 1rem;
+  font-size: 2vw;
   font-style: italic;
   color: lightgray;
 }
 
 .context {
   margin-top: 0;
-  font-size: 1rem;
+  font-size: 2vw;
   color: lightgray;
 }
 
@@ -408,61 +409,292 @@ BookMark Animation ----- End
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .value {
-    font-size: 13px;
-    padding: 4px;
+  font-size: 13px;
+  padding: 4px;
 }
 
 .like-icon {
-    fill: #b02227;
+  fill: #b02227;
 }
 
 .likes {
-    color: #b02227;
+  color: #b02227;
 }
 
 .link {
-    background-color: #0551f4;
+  background-color: #0551f4;
 }
 
 .link-icon {
-    fill: aliceblue;
+  fill: aliceblue;
 }
 
 .twitter {
-    background-color: #05acfb;
+  background-color: #05acfb;
 }
 
 .twitter-icon {
-    fill: aliceblue;
+  fill: aliceblue;
 }
 
 .facebook {
-    background-color: #3c5897;
+  background-color: #3c5897;
 }
 
 .facebook-icon {
-    fill: aliceblue;
+  fill: aliceblue;
 }
 
 .whatsapp {
-    background-color: #4bb64e;
+  background-color: #4bb64e;
 }
 
 .whatsapp-icon {
-    fill: aliceblue;
+  fill: aliceblue;
 }
 
 .linkedin {
-    background-color: #1f74ce;
+  background-color: #1f74ce;
 }
 
 .linkedin-icon {
-    fill: aliceblue;
+  fill: aliceblue;
 }
 
+.recommendations {
+  display: flex;
+  flex-direction: row;
+}
 
+.rectangle {
+  margin: auto;
+  height: 15vw;
+}
 
+.img {
+  height: 15vw;
+  width: 25vw;
+  background-repeat: no-repeat;
+  background-size: 251px auto;
+  background-position-x: center;
+  background-position-y: bottom;
+  border-radius: 3px;
+}
+
+.imgholder1 {
+  background-image: url(./img/research.jpg);
+  background-size: 25vw auto;
+  background-position-x: center;
+  background-position-y: bottom;
+}
+
+.imgholder2 {
+  background-image: url(./img/peace.jpg);
+  background-size: 26vw auto;
+  background-position-x: center;
+  background-position-y: bottom;
+}
+
+.imgholder3 {
+  background-image: url(./img/ship.jpg);
+  background-size: 35vw auto;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.text {
+  display: flex;
+  margin-top: 0.6vw;
+}
+
+.name {
+  margin-right: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.category {
+  font-size: 1vw;
+  background-color: #f2f2f2;
+  border-radius: 10vw;
+  height: fit-content;
+  padding: 0.5vw;
+}
+
+.author {
+  float: left;
+  font-size: 1.5vw;
+  opacity: 0.5;
+}
+
+.gap2 {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .search-bar {
+    width: 20vw;
+  }
+
+  .bar {
+    width: 15vw;
+  }
+
+  .slots {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon {
+    width: 2.5vw;
+  }
+
+  .para1 {
+    font-size: 23px;
+  }
+
+  .para2 {
+    font-size: 23px;
+  }
+
+  .author {
+    opacity: 0.8;
+  }
+
+  .bkmrk {
+    margin-top: 6px;
+  }
+
+  .anim-icon {
+    margin: 0;
+  }
+}
+
+@media (max-width: 660px) {
+  .new-article h5 {
+    display: none;
+  }
+
+  .new-article {
+    margin: auto;
+    margin-right: 10px;
+    color: white;
+    border-radius: 10vw;
+    background-color: #b02227;
+  }
+
+  .edit {
+    display: block;
+    fill: white;
+    padding: 10px;
+    margin: 0;
+    width: auto;
+    height: 20px;
+  }
+}
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 486px) {
+  body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .para1 {
+    font-size: 18px;
+  }
+
+  .bar {
+    width: 10vw;
+  }
+
+  .anim-icon-md {
+    font-size: 16px;
+  }
+
+  .para2 {
+    font-size: 18px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .up-mobile {
+    display: flex;
+    display: flex;
+    width: 90vw;
+  }
+
+  .down-mobile {
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .value {
+    padding: 7px;
+  }
+
+  .slots {
+    margin: auto;
+  }
+
+  .gap {
+    display: none;
+  }
+
+  .recommendations {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rectangle {
+    margin-bottom: 55px;
+    margin: auto;
+    height: 35vw;
+  }
+
+  .img {
+    height: 35vw;
+    width: 72vw;
+  }
+
+  .imgholder1 {
+    background-size: 75vw auto;
+  }
+
+  .imgholder2 {
+    background-size: 75vw auto;
+  }
+
+  .imgholder3 {
+    background-size: 90vw auto;
+  }
+
+  .gap2 {
+    display: block;
+  }
+
+  .category {
+    font-size: 3vw;
+    padding: 1.1vw;
+  }
+
+  .author {
+    font-size: 3.5vw;
+    opacity: 0.8;
+  }
+}
